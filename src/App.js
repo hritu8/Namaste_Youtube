@@ -32,7 +32,10 @@ function App() {
   return (
     <Provider store={store}>
       <div>
-        <Header />
+        <div className="sticky top-0 bg-white">
+          <Header />
+        </div>
+
         <RouterProvider router={appRouter} />
       </div>
     </Provider>
